@@ -1,0 +1,18 @@
+main: net.leminaw.kittenforever.Plugin
+name: KittenForever
+version: 1.0.0
+author: LeMinaw
+api-version: 1.17
+description: Lightweight plugin to control the growth of some animals.
+
+permissions:
+  kittenforever.growth.*:
+    description: Control all aspects of animal growth.
+    default: op
+    children:
+      kittenforever.growth.stop: true
+      kittenforever.growth.resume: true
+  kittenforever.growth.stop:
+    description: Allow stopping animal growth.
+  kittenforever.growth.resume:
+    description: Allow resuming animal growth.
